@@ -11,6 +11,7 @@ import java.util.ArrayList;
 public class PersonContainer {
 	private static PersonContainer instance;
 	private ArrayList<Person> persons;
+	
 	private PersonContainer() {
 		super();
 		persons = new ArrayList<>();
@@ -45,6 +46,10 @@ public class PersonContainer {
 			
 		}
 		return person;
+	}
+
+	public ArrayList<Person> getPersons() {
+		return persons;
 	}
 	
 }
